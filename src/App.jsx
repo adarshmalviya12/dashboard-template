@@ -6,6 +6,7 @@ import SignIn from "./pages/Authentication/SignIn";
 import SignUp from "./pages/Authentication/SignUp";
 import routes from "./routes";
 import Loader from "./common";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
       <Route path="/auth/signin" element={<SignIn />} />
       <Route path="/auth/signup" element={<SignUp />} />
       <Route element={<DefaultLayout />}>
+        <Route index element={<Dashboard />} />
         {routes.map((routes, index) => {
           const { path, component: Component } = routes;
           return (
