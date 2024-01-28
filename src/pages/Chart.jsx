@@ -1,4 +1,4 @@
-const Chart = () => {
-  return <div>Chart</div>;
+const Charts = () => {
+  return <div>Charts</div>;
 };
-export default Chart;
+export default Charts;
